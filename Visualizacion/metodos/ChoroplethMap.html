@@ -1,0 +1,115 @@
+
+
+
+  <html>
+
+<head>
+    <script src="./js-colormaps.js"></script>
+
+    <title>Choropleth Map</title>
+    <script src="https://unpkg.com/chart.js@3.6.0/dist/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.6.0/build/index.umd.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/topojson.v3.min.js"></script>
+<script src="https://unpkg.com/d3-composite-projections@1.3.0"></script>
+
+
+<body>
+    <span> colormaps from <a
+            href="https://github.com/timothygebhard/js-colormaps/blob/master/js-colormaps.js">js-colormaps</a></span>
+    <span>Fuente de los datos https://servicios.ine.es</span>
+    En este caso, utilizaremos los mismos datos del ine para hacer un mapa de calor ara los casos de covid
+    <canvas id="container"></canvas>
+
+    <script lang="javascript">
+                /*
+                fetch('https://unpkg.com/es-atlas/es/municipalities.json').then((r) => r.json()).then((us) => {
+        const nation = ChartGeo.topojson.feature(us, us.objects.border).features[0];
+        const states = ChartGeo.topojson.feature(us,  us.objects.municipalities).features;
+        console.log(nation);
+        console.log(states)
+        */
+        function hasKey(value, key) {
+            if (value.MetaData !== undefined)
+                for (var i = 0; i < value.MetaData.length; i++)
+                    if (value.MetaData[i].Codigo == key)
+                        return true
+            return false
+        }
+        fetch('https://unpkg.com/es-atlas/es/municipalities.json').then((r) => r.json()).then((us) => {
+        const nation = ChartGeo.topojson.feature(us, us.objects.border).features[0];
+        const states = ChartGeo.topojson.feature(us,  us.objects.provinces).features;
+
+        var ctx = document.getElementById("container").getContext("2d");
+        
+        fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/49945?tip=AM")
+            .then((data) => data.json().then(loadData))
+            .catch(alert)
+
+        function loadData(values) {
+            var filteredValues = values.filter((o => hasKey(o, "001102ixxiitodaslascausas") && hasKey(o, "ambossexos") && !hasKey(o, "00")));
+            var labels = filteredValues.map(o=> o.MetaData[2].Nombre);
+            var data = filteredValues.map(o=> o.Data[0].Valor);
+            var maximo = Math.max(...(filteredValues.map(o=> o.Data[0].Valor)));
+            var valuesNormalized = filteredValues.map(o=> o.Data[0].Valor/maximo);
+            createChart(states, labels, data, valuesNormalized)
+        }
+        function createChart(features, labels, values, colors) {
+            var data = [];
+            console.log(features.map(o=> o.properties.name))
+            for (var i = 0; i< labels.length; i++) {
+                if (labels.indexOf("," !== -1))
+                    labels[i] = labels[i].split(",")[0]
+                    if (labels.indexOf("/" !== -1))
+                    labels[i] = labels[i].split("/")[0]
+                var idx = features.map(o=> o.properties.name).indexOf(labels[i])
+
+                data.push({feature: features[idx], value: values[i]})
+                if (idx == -1)
+                {
+                    for (j = 0; j < features.length; j++)
+                    {
+                        if (features[j].properties.name.indexOf(labels[i] !== -1))
+                            data.push({feature: features[idx], value: values[i]})
+                    }
+                }
+            }
+
+            const chart = new Chart(ctx, {
+            type: 'choropleth',
+            data: {
+            labels: labels  ,
+            datasets: [{
+                label: 'Comunidades autónomas',
+                outline: nation,
+                data: data,
+                //backgroundColor: colors.map(o=> "rgba("+OrRd(o).join(",") +")"),
+            }]
+            },
+            options: {
+            plugins: {
+                legend: {
+                display: false
+                },
+            },
+            scales: {
+                color: {
+                quantize: 3,
+                legend: {
+                    position: 'bottom-right',
+                    align: 'bottom'
+                },
+                },
+                xy: {
+                  projection: 'equalEarth',
+                },
+            },
+            }
+        });
+        } 
+
+        });
+    </script>
+</body>
+
+</html>

@@ -4,4 +4,4 @@
 
 * [Choroplet Map](./Visualizacion/metodos/ChoroplethMap)
 * [Histogram](./Visualizacion/metodos/Histogram)
-* [Marimekko](./Visualizacion/metodos/MarimekkoChart)
+* [Marimekko](./Visualizacion/metodos/Marimekko)
