@@ -19,7 +19,7 @@
             href="https://github.com/timothygebhard/js-colormaps/blob/master/js-colormaps.js">js-colormaps</a></span>
     <span>Fuente de los datos https://servicios.ine.es</span>
     En este caso, utilizaremos los mismos datos del ine para hacer un mapa de calor ara los casos de covid
-    <canvas id="container"></canvas>
+    <canvas id="container" style="max-height: 400px;max-width: 943px;"></canvas>
 
     <script lang="javascript">
                 /*
@@ -65,14 +65,6 @@
                 var idx = features.map(o=> o.properties.name).indexOf(labels[i])
 
                 data.push({feature: features[idx], value: values[i]})
-                if (idx == -1)
-                {
-                    for (j = 0; j < features.length; j++)
-                    {
-                        if (features[j].properties.name.indexOf(labels[i] !== -1))
-                            data.push({feature: features[idx], value: values[i]})
-                    }
-                }
             }
 
             const chart = new Chart(ctx, {
@@ -93,13 +85,6 @@
                 },
             },
             scales: {
-                color: {
-                quantize: 3,
-                legend: {
-                    position: 'bottom-right',
-                    align: 'bottom'
-                },
-                },
                 xy: {
                   projection: 'equalEarth',
                 },
