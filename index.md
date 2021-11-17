@@ -2,6 +2,6 @@
 
 ### Visualización de datos
 
-* [Choroplet Map](./Visualizacion/ChoroplethMap)
-* [Histogram](./Visualizacion/Histogram)
-* [Marimekko](./Visualizacion/MarimekkoChart)
+* [Choroplet Map](./Visualizacion/metodos/ChoroplethMap)
+* [Histogram](./Visualizacion/metodos/Histogram)
+* [Marimekko](./Visualizacion/metodos/MarimekkoChart)

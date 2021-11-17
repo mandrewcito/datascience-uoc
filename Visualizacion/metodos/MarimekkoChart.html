@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script src="./js-colormaps.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-mekko.min.js"></script>
+</head>
+
+<body>
+    <span> colormaps from <a
+            href="https://github.com/timothygebhard/js-colormaps/blob/master/js-colormaps.js">js-colormaps</a></span>
+    <span>Fuente de los datos https://servicios.ine.es</span>
+    <div id="container"></div>
+
+    <script lang="javascript">
+        var myData = {
+            title: 'Global Smartphone Shipments (In Millions) in 2019, quarterly',
+            header: ['Name', 'Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4'],
+            rows: [
+                ['Huawei', 59.1, 56.6, 66.8, 56.2],
+                ['Vivo', 23.9, 27, 31.3, 31.5],
+                ['Apple', 42, 36.5, 44.8, 72.3],
+                ['Samsung', 72, 76.3, 78.2, 70.4],
+                ['Xiaomi', 27.8, 32.3, 31.7, 32.9],
+                ['Oppo', 25.7, 30.6, 32.3, 31.4],
+                ['Others', 90.5, 97.7, 94.9, 106.4],
+            ]
+        };
+        function createChart(myData) {
+            // create a mekko (marimekko) chart
+            var chart = anychart.mekko();
+            // set the chart data
+            chart.data(myData);
+            // enable the chart legend
+            chart.legend(true);
+            // set the chart container id
+            chart.container('container');
+            // draw the resulting marimekko chart
+            chart.draw();
+        }
+        anychart.onDocumentReady(function () {
+            createChart(myData);
+        });
+    </script>
+</body>
+
+</html>
