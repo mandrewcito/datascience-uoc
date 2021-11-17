@@ -7,6 +7,7 @@ Un diagrama de mosaico (también conocido como diagrama de Marimekko) es un mét
 Al igual que con los gráficos de barras y los gráficos de columna, el área de los mosaicos, también conocida como tamaño del contenedor, es proporcional al número de observaciones dentro de esa categoría. 
 
 ## Descripción
+
 Es un mosaico sobre el que se representan variables en función al área de cada cuadrado que compone el mosaico
 
 ## Etimología
@@ -15,7 +16,7 @@ Hartigan y Kleiner en 1981 y ampliado por Friendly en 1994. [4] Los gráficos de
 
 ## Funcionamiento y tipos de datos adecuados
 
-Se utilizarán variables categóricas.
+Se utilizarán variables cuantitavivas.
 
 ### Construcción
 
@@ -27,9 +28,10 @@ Las variables categóricas se ordenan primero. Luego, cada variable se asigna a 
 
 Limitado a agrupaciones de variables categóricas. Límite 2 variables, una por cada eje.
 
-## Aplicaciones 
-
 ## Ejemplo con conjunto de datos abiertos
+
+
+* [Ejemplo marimekko](./MarimekkoChart.html)
 
 # Referencias
 
