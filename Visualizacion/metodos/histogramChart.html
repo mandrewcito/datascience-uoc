@@ -8,19 +8,29 @@
 <body>
     <span> colormaps from <a
             href="https://github.com/timothygebhard/js-colormaps/blob/master/js-colormaps.js">js-colormaps</a></span>
+    <span>Fuente de los datos https://servicios.ine.es</span>
 
     <div>
         <canvas id="myChart"></canvas>
     </div>
     <script>
+        function CreateColors(size){
+            if (Accent === undefined) return undefined;
+            var colors = []
+            for( var i = 0; i < size; i++)
+            {
+                colors.push("rgba("+Accent((i%10) * 0.1).join(",") +")")
+            }
+            return colors
+        }
         function CreateData(labels, data) {
             return {
                 labels: labels,
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Muertos por COVID 19 por provincia',
                     data: data,
-                    backgroundColor: undefined,
-                    borderColor: undefined,
+                    backgroundColor: CreateColors(labels.length),
+                    borderColor:  CreateColors(labels.length),
                     borderWidth: 1
                 }]
             }
@@ -51,7 +61,7 @@
         function drawGraphic(values) {
             console.log(values);
             console.log(values[0].MetaData);
-            var filteredValues = values.filter((o => hasKey(o, "001102ixxiitodaslascausas") && hasKey(o, "ambossexos")));
+            var filteredValues = values.filter((o => hasKey(o, "001102ixxiitodaslascausas") && hasKey(o, "ambossexos") && !hasKey(o, "00")));
             var labels = filteredValues.map(o=> o.MetaData[2].Nombre);
             var data = filteredValues.map(o=> o.Data[0].Valor);
             var ctx = document.getElementById("myChart").getContext("2d");
