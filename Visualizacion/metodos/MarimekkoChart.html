@@ -13,19 +13,36 @@
     <div id="container"></div>
 
     <script lang="javascript">
-        var myData = {
-            title: 'Global Smartphone Shipments (In Millions) in 2019, quarterly',
-            header: ['Name', 'Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4'],
-            rows: [
-                ['Huawei', 59.1, 56.6, 66.8, 56.2],
-                ['Vivo', 23.9, 27, 31.3, 31.5],
-                ['Apple', 42, 36.5, 44.8, 72.3],
-                ['Samsung', 72, 76.3, 78.2, 70.4],
-                ['Xiaomi', 27.8, 32.3, 31.7, 32.9],
-                ['Oppo', 25.7, 30.6, 32.3, 31.4],
-                ['Others', 90.5, 97.7, 94.9, 106.4],
-            ]
-        };
+
+
+        function drawGraphic(data) {
+            var muertesCovid = data.filter(o => o.MetaData[2].Codigo == "00" && o.MetaData[1].Codigo != "ambossexos" && o.MetaData[0].Codigo == "00acovid19virusidentificado")
+             
+            var muertesMeni = data.filter(o => o.MetaData[2].Codigo == "00" && o.MetaData[1].Codigo != "ambossexos" && o.MetaData[0].Codigo == "003enfermedadmeningococica")
+
+            var muertesTumo = data.filter(o => o.MetaData[2].Codigo == "00" && o.MetaData[1].Codigo != "ambossexos" && o.MetaData[0].Codigo == "009041iitumores")
+            
+            var muertesInfecciosas = data.filter(o => o.MetaData[2].Codigo == "00" && o.MetaData[1].Codigo != "ambossexos" && o.MetaData[0].Codigo == "001008ienfermedadesinfecciosasyparasitarias")
+            
+            var myData = {
+                title: 'Causas de muertes mostradas por sexo',
+                header: ['','Hombre', 'Mujer'],
+                rows: [
+                    ['Covid',  muertesCovid[0].Data[0].Valor,  muertesCovid[1].Data[0].Valor],
+                    ['Meningococo',  muertesMeni[0].Data[0].Valor,  muertesMeni[1].Data[0].Valor],
+                    ['Tumores',  muertesTumo[0].Data[0].Valor,  muertesTumo[1].Data[0].Valor],                    
+                    ['Infeciosas',  muertesInfecciosas[0].Data[0].Valor,  muertesInfecciosas[1].Data[0].Valor],
+
+
+                ]
+            };
+
+            createChart(myData);
+        }
+
+
+
+
         function createChart(myData) {
             // create a mekko (marimekko) chart
             var chart = anychart.mekko();
@@ -39,7 +56,9 @@
             chart.draw();
         }
         anychart.onDocumentReady(function () {
-            createChart(myData);
+            fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/49945?tip=AM")
+                .then((data) => data.json().then(drawGraphic))
+                .catch(alert)
         });
     </script>
 </body>
