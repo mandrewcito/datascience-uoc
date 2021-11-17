@@ -37,6 +37,8 @@ Los datos deben ser geolocalizados o agrupados por las regiones que se quieren m
 
 ## Ejemplo con conjunto de datos abiertos
 
+* [Ejemplo ChoroplethMap](./ChoroplethMapChart.html)
+
 # Referencias
 
 * [wikipedia](https://es.wikipedia.org/wiki/Mapa_coropl%C3%A9tico)

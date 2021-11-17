@@ -51,7 +51,10 @@ Los histogramas se aplican a variables continuas, aquellas en las que la variabl
 
 ## Ejemplo con conjunto de datos abiertos
 
+* [Ejemplo histograma](./histogramChart.html)
 
 # Referencias
 
 * [Wikipedia](https://es.wikipedia.org/wiki/Histograma)
+
+

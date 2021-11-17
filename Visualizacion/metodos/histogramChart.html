@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <script src="./js-colormaps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <span> colormaps from <a
+            href="https://github.com/timothygebhard/js-colormaps/blob/master/js-colormaps.js">js-colormaps</a></span>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        function CreateData(labels, data) {
+            return {
+                labels: labels,
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: data,
+                    backgroundColor: undefined,
+                    borderColor: undefined,
+                    borderWidth: 1
+                }]
+            }
+        }
+
+        function CreateConfig(labels, data) {
+            return {
+                type: 'bar',
+                data: CreateData(labels, data),
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                },
+            };
+        }
+
+        function hasKey(value, key) {
+            if (value.MetaData !== undefined)
+                for (var i = 0; i < value.MetaData.length; i++)
+                    if (value.MetaData[i].Codigo == key)
+                        return true
+            return false
+        }
+
+        function drawGraphic(values) {
+            console.log(values);
+            console.log(values[0].MetaData);
+            var filteredValues = values.filter((o => hasKey(o, "001102ixxiitodaslascausas") && hasKey(o, "ambossexos")));
+            var labels = filteredValues.map(o=> o.MetaData[2].Nombre);
+            var data = filteredValues.map(o=> o.Data[0].Valor);
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myBarChart = new Chart(ctx, CreateConfig(labels, data));
+
+        }
+
+        fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/49945?tip=AM")
+            .then((data) => data.json().then(drawGraphic))
+            .catch(alert)
+    </script>
+</body>
+
+</html>
