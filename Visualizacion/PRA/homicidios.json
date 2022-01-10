@@ -1,0 +1,361 @@
+[{"Nombre":"Total Nacional, Tasa de homicidios", "MetaData":[{"Id":16473, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Total Nacional", "Codigo":"00"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.63}
+,{"NombrePeriodo":"2019", "Valor":0.71}
+,{"NombrePeriodo":"2018", "Valor":0.62}
+,{"NombrePeriodo":"2017", "Valor":0.66}
+,{"NombrePeriodo":"2016", "Valor":0.63}
+,{"NombrePeriodo":"2015", "Valor":0.65}
+,{"NombrePeriodo":"2014", "Valor":0.7}
+,{"NombrePeriodo":"2013", "Valor":0.65}
+,{"NombrePeriodo":"2012", "Valor":0.78}
+,{"NombrePeriodo":"2011", "Valor":0.82}
+,{"NombrePeriodo":"2010", "Valor":0.86}
+]
+}
+,{"Nombre":"Andalucía, Tasa de homicidios", "MetaData":[{"Id":8997, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Andalucía", "Codigo":"01"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.72}
+,{"NombrePeriodo":"2019", "Valor":0.97}
+,{"NombrePeriodo":"2018", "Valor":0.86}
+,{"NombrePeriodo":"2017", "Valor":0.58}
+,{"NombrePeriodo":"2016", "Valor":0.81}
+,{"NombrePeriodo":"2015", "Valor":0.77}
+,{"NombrePeriodo":"2014", "Valor":0.82}
+,{"NombrePeriodo":"2013", "Valor":0.77}
+,{"NombrePeriodo":"2012", "Valor":0.81}
+,{"NombrePeriodo":"2011", "Valor":1.02}
+,{"NombrePeriodo":"2010", "Valor":0.94}
+]
+}
+,{"Nombre":"Aragón, Tasa de homicidios", "MetaData":[{"Id":8998, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Aragón", "Codigo":"02"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.3}
+,{"NombrePeriodo":"2019", "Valor":0.45}
+,{"NombrePeriodo":"2018", "Valor":0.68}
+,{"NombrePeriodo":"2017", "Valor":0.61}
+,{"NombrePeriodo":"2016", "Valor":0.61}
+,{"NombrePeriodo":"2015", "Valor":0.68}
+,{"NombrePeriodo":"2014", "Valor":0.38}
+,{"NombrePeriodo":"2013", "Valor":0.52}
+,{"NombrePeriodo":"2012", "Valor":0.45}
+,{"NombrePeriodo":"2011", "Valor":0.45}
+,{"NombrePeriodo":"2010", "Valor":0.74}
+]
+}
+,{"Nombre":"Asturias, Principado de, Tasa de homicidios", "MetaData":[{"Id":8999, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Asturias, Principado de", "Codigo":"03"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.49}
+,{"NombrePeriodo":"2019", "Valor":0.69}
+,{"NombrePeriodo":"2018", "Valor":0.68}
+,{"NombrePeriodo":"2017", "Valor":0.49}
+,{"NombrePeriodo":"2016", "Valor":0.58}
+,{"NombrePeriodo":"2015", "Valor":0.38}
+,{"NombrePeriodo":"2014", "Valor":0.66}
+,{"NombrePeriodo":"2013", "Valor":0.75}
+,{"NombrePeriodo":"2012", "Valor":0.56}
+,{"NombrePeriodo":"2011", "Valor":0.84}
+,{"NombrePeriodo":"2010", "Valor":1.77}
+]
+}
+,{"Nombre":"Balears, Illes, Tasa de homicidios", "MetaData":[{"Id":9000, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Balears, Illes", "Codigo":"04"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.58}
+,{"NombrePeriodo":"2019", "Valor":0.5}
+,{"NombrePeriodo":"2018", "Valor":0.68}
+,{"NombrePeriodo":"2017", "Valor":0.35}
+,{"NombrePeriodo":"2016", "Valor":0.79}
+,{"NombrePeriodo":"2015", "Valor":0.71}
+,{"NombrePeriodo":"2014", "Valor":1.07}
+,{"NombrePeriodo":"2013", "Valor":0.9}
+,{"NombrePeriodo":"2012", "Valor":0.45}
+,{"NombrePeriodo":"2011", "Valor":1.1}
+,{"NombrePeriodo":"2010", "Valor":0.55}
+]
+}
+,{"Nombre":"Canarias, Tasa de homicidios", "MetaData":[{"Id":9001, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Canarias", "Codigo":"05"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.53}
+,{"NombrePeriodo":"2019", "Valor":0.9}
+,{"NombrePeriodo":"2018", "Valor":1.14}
+,{"NombrePeriodo":"2017", "Valor":0.92}
+,{"NombrePeriodo":"2016", "Valor":0.98}
+,{"NombrePeriodo":"2015", "Valor":0.94}
+,{"NombrePeriodo":"2014", "Valor":0.57}
+,{"NombrePeriodo":"2013", "Valor":0.62}
+,{"NombrePeriodo":"2012", "Valor":0.72}
+,{"NombrePeriodo":"2011", "Valor":0.82}
+,{"NombrePeriodo":"2010", "Valor":0.83}
+]
+}
+,{"Nombre":"Cantabria, Tasa de homicidios", "MetaData":[{"Id":9002, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cantabria", "Codigo":"06"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.17}
+,{"NombrePeriodo":"2019", "Valor":1.03}
+,{"NombrePeriodo":"2018", "Valor":0.34}
+,{"NombrePeriodo":"2017", "Valor":0.52}
+,{"NombrePeriodo":"2016", "Valor":0.0}
+,{"NombrePeriodo":"2015", "Valor":0.51}
+,{"NombrePeriodo":"2014", "Valor":0.51}
+,{"NombrePeriodo":"2013", "Valor":0.68}
+,{"NombrePeriodo":"2012", "Valor":0.17}
+,{"NombrePeriodo":"2011", "Valor":0.34}
+,{"NombrePeriodo":"2010", "Valor":0.34}
+]
+}
+,{"Nombre":"Castilla y León, Tasa de homicidios", "MetaData":[{"Id":9003, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.67}
+,{"NombrePeriodo":"2019", "Valor":0.33}
+,{"NombrePeriodo":"2018", "Valor":0.46}
+,{"NombrePeriodo":"2017", "Valor":0.54}
+,{"NombrePeriodo":"2016", "Valor":0.45}
+,{"NombrePeriodo":"2015", "Valor":0.37}
+,{"NombrePeriodo":"2014", "Valor":0.56}
+,{"NombrePeriodo":"2013", "Valor":0.76}
+,{"NombrePeriodo":"2012", "Valor":0.59}
+,{"NombrePeriodo":"2011", "Valor":0.79}
+,{"NombrePeriodo":"2010", "Valor":0.39}
+]
+}
+,{"Nombre":"Castilla - La Mancha, Tasa de homicidios", "MetaData":[{"Id":9004, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Castilla - La Mancha", "Codigo":"08"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.83}
+,{"NombrePeriodo":"2019", "Valor":0.54}
+,{"NombrePeriodo":"2018", "Valor":0.39}
+,{"NombrePeriodo":"2017", "Valor":0.59}
+,{"NombrePeriodo":"2016", "Valor":0.54}
+,{"NombrePeriodo":"2015", "Valor":0.63}
+,{"NombrePeriodo":"2014", "Valor":0.77}
+,{"NombrePeriodo":"2013", "Valor":0.72}
+,{"NombrePeriodo":"2012", "Valor":0.81}
+,{"NombrePeriodo":"2011", "Valor":0.38}
+,{"NombrePeriodo":"2010", "Valor":0.57}
+]
+}
+,{"Nombre":"Cataluña, Tasa de homicidios", "MetaData":[{"Id":9005, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Cataluña", "Codigo":"09"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.63}
+,{"NombrePeriodo":"2019", "Valor":0.79}
+,{"NombrePeriodo":"2018", "Valor":0.6}
+,{"NombrePeriodo":"2017", "Valor":0.87}
+,{"NombrePeriodo":"2016", "Valor":0.73}
+,{"NombrePeriodo":"2015", "Valor":0.57}
+,{"NombrePeriodo":"2014", "Valor":0.77}
+,{"NombrePeriodo":"2013", "Valor":0.58}
+,{"NombrePeriodo":"2012", "Valor":0.99}
+,{"NombrePeriodo":"2011", "Valor":1.01}
+,{"NombrePeriodo":"2010", "Valor":1.3}
+]
+}
+,{"Nombre":"Comunitat Valenciana, Tasa de homicidios", "MetaData":[{"Id":9006, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.73}
+,{"NombrePeriodo":"2019", "Valor":0.8}
+,{"NombrePeriodo":"2018", "Valor":0.51}
+,{"NombrePeriodo":"2017", "Valor":0.83}
+,{"NombrePeriodo":"2016", "Valor":0.61}
+,{"NombrePeriodo":"2015", "Valor":0.97}
+,{"NombrePeriodo":"2014", "Valor":0.65}
+,{"NombrePeriodo":"2013", "Valor":0.64}
+,{"NombrePeriodo":"2012", "Valor":1.02}
+,{"NombrePeriodo":"2011", "Valor":0.92}
+,{"NombrePeriodo":"2010", "Valor":0.92}
+]
+}
+,{"Nombre":"Extremadura, Tasa de homicidios", "MetaData":[{"Id":9007, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Extremadura", "Codigo":"11"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.85}
+,{"NombrePeriodo":"2019", "Valor":0.47}
+,{"NombrePeriodo":"2018", "Valor":0.37}
+,{"NombrePeriodo":"2017", "Valor":0.75}
+,{"NombrePeriodo":"2016", "Valor":0.65}
+,{"NombrePeriodo":"2015", "Valor":0.09}
+,{"NombrePeriodo":"2014", "Valor":0.37}
+,{"NombrePeriodo":"2013", "Valor":0.64}
+,{"NombrePeriodo":"2012", "Valor":1.18}
+,{"NombrePeriodo":"2011", "Valor":0.91}
+,{"NombrePeriodo":"2010", "Valor":0.27}
+]
+}
+,{"Nombre":"Galicia, Tasa de homicidios", "MetaData":[{"Id":9008, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Galicia", "Codigo":"12"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.41}
+,{"NombrePeriodo":"2019", "Valor":0.59}
+,{"NombrePeriodo":"2018", "Valor":0.3}
+,{"NombrePeriodo":"2017", "Valor":0.48}
+,{"NombrePeriodo":"2016", "Valor":0.44}
+,{"NombrePeriodo":"2015", "Valor":0.7}
+,{"NombrePeriodo":"2014", "Valor":0.73}
+,{"NombrePeriodo":"2013", "Valor":0.54}
+,{"NombrePeriodo":"2012", "Valor":0.58}
+,{"NombrePeriodo":"2011", "Valor":0.51}
+,{"NombrePeriodo":"2010", "Valor":0.61}
+]
+}
+,{"Nombre":"Madrid, Comunidad de, Tasa de homicidios", "MetaData":[{"Id":9009, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Madrid, Comunidad de", "Codigo":"13"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.56}
+,{"NombrePeriodo":"2019", "Valor":0.48}
+,{"NombrePeriodo":"2018", "Valor":0.55}
+,{"NombrePeriodo":"2017", "Valor":0.6}
+,{"NombrePeriodo":"2016", "Valor":0.51}
+,{"NombrePeriodo":"2015", "Valor":0.47}
+,{"NombrePeriodo":"2014", "Valor":0.64}
+,{"NombrePeriodo":"2013", "Valor":0.58}
+,{"NombrePeriodo":"2012", "Valor":0.75}
+,{"NombrePeriodo":"2011", "Valor":0.72}
+,{"NombrePeriodo":"2010", "Valor":0.8}
+]
+}
+,{"Nombre":"Murcia, Región de, Tasa de homicidios", "MetaData":[{"Id":9010, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Murcia, Región de", "Codigo":"14"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.66}
+,{"NombrePeriodo":"2019", "Valor":0.87}
+,{"NombrePeriodo":"2018", "Valor":0.74}
+,{"NombrePeriodo":"2017", "Valor":0.95}
+,{"NombrePeriodo":"2016", "Valor":0.82}
+,{"NombrePeriodo":"2015", "Valor":0.82}
+,{"NombrePeriodo":"2014", "Valor":0.55}
+,{"NombrePeriodo":"2013", "Valor":0.34}
+,{"NombrePeriodo":"2012", "Valor":0.68}
+,{"NombrePeriodo":"2011", "Valor":0.68}
+,{"NombrePeriodo":"2010", "Valor":1.03}
+]
+}
+,{"Nombre":"Navarra, Comunidad Foral de, Tasa de homicidios", "MetaData":[{"Id":9011, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Navarra, Comunidad Foral de", "Codigo":"15"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.15}
+,{"NombrePeriodo":"2019", "Valor":0.77}
+,{"NombrePeriodo":"2018", "Valor":1.55}
+,{"NombrePeriodo":"2017", "Valor":1.09}
+,{"NombrePeriodo":"2016", "Valor":0.16}
+,{"NombrePeriodo":"2015", "Valor":0.47}
+,{"NombrePeriodo":"2014", "Valor":0.16}
+,{"NombrePeriodo":"2013", "Valor":0.63}
+,{"NombrePeriodo":"2012", "Valor":0.31}
+,{"NombrePeriodo":"2011", "Valor":0.78}
+,{"NombrePeriodo":"2010", "Valor":0.47}
+]
+}
+,{"Nombre":"País Vasco, Tasa de homicidios", "MetaData":[{"Id":9012, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"País Vasco", "Codigo":"16"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.59}
+,{"NombrePeriodo":"2019", "Valor":0.46}
+,{"NombrePeriodo":"2018", "Valor":0.28}
+,{"NombrePeriodo":"2017", "Valor":0.23}
+,{"NombrePeriodo":"2016", "Valor":0.28}
+,{"NombrePeriodo":"2015", "Valor":0.51}
+,{"NombrePeriodo":"2014", "Valor":0.46}
+,{"NombrePeriodo":"2013", "Valor":0.6}
+,{"NombrePeriodo":"2012", "Valor":0.55}
+,{"NombrePeriodo":"2011", "Valor":0.55}
+,{"NombrePeriodo":"2010", "Valor":0.46}
+]
+}
+,{"Nombre":"Rioja, La, Tasa de homicidios", "MetaData":[{"Id":9013, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Rioja, La", "Codigo":"17"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":1.58}
+,{"NombrePeriodo":"2019", "Valor":0.0}
+,{"NombrePeriodo":"2018", "Valor":0.32}
+,{"NombrePeriodo":"2017", "Valor":0.0}
+,{"NombrePeriodo":"2016", "Valor":0.0}
+,{"NombrePeriodo":"2015", "Valor":0.32}
+,{"NombrePeriodo":"2014", "Valor":0.96}
+,{"NombrePeriodo":"2013", "Valor":0.0}
+,{"NombrePeriodo":"2012", "Valor":0.31}
+,{"NombrePeriodo":"2011", "Valor":0.62}
+,{"NombrePeriodo":"2010", "Valor":0.63}
+]
+}
+,{"Nombre":"Ceuta, Tasa de homicidios", "MetaData":[{"Id":9015, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Ceuta", "Codigo":"18"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":2.38}
+,{"NombrePeriodo":"2019", "Valor":4.74}
+,{"NombrePeriodo":"2018", "Valor":1.18}
+,{"NombrePeriodo":"2017", "Valor":1.18}
+,{"NombrePeriodo":"2016", "Valor":4.72}
+,{"NombrePeriodo":"2015", "Valor":1.18}
+,{"NombrePeriodo":"2014", "Valor":7.09}
+,{"NombrePeriodo":"2013", "Valor":2.37}
+,{"NombrePeriodo":"2012", "Valor":0.0}
+,{"NombrePeriodo":"2011", "Valor":4.82}
+,{"NombrePeriodo":"2010", "Valor":1.24}
+]
+}
+,{"Nombre":"Melilla, Tasa de homicidios", "MetaData":[{"Id":8995, "Variable":{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+, "Nombre":"Melilla", "Codigo":"19"}
+,{"Variable":{"Nombre":"tipo de tasa", "Codigo":"tipodetasa"}
+, "Nombre":"Tasa de homicidios", "Codigo":"tasadehomicidios"}
+]
+, "Data":[{"NombrePeriodo":"2020", "Valor":0.0}
+,{"NombrePeriodo":"2019", "Valor":1.18}
+,{"NombrePeriodo":"2018", "Valor":0.0}
+,{"NombrePeriodo":"2017", "Valor":0.0}
+,{"NombrePeriodo":"2016", "Valor":1.18}
+,{"NombrePeriodo":"2015", "Valor":1.18}
+,{"NombrePeriodo":"2014", "Valor":3.57}
+,{"NombrePeriodo":"2013", "Valor":1.2}
+,{"NombrePeriodo":"2012", "Valor":4.84}
+,{"NombrePeriodo":"2011", "Valor":0.0}
+,{"NombrePeriodo":"2010", "Valor":0.0}
+]
+}
+]

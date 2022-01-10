@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <title>Práctica - anbaalo </title>
+    <script src="https://unpkg.com/chart.js@3.6.0/dist/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.6.0/build/index.umd.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://unpkg.com/d3-composite-projections@1.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    <script src="./js-colormaps.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-mekko.min.js"></script>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Filtrar datos</h5>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <select id="yearSelect" name="year">
+                    <option value="2019" selected>2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+            <select id="ccaaSelect" multiple name="ccaa">
+            </select>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="filterClose" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="navbar" style="display: flex; justify-content: space-between;">
+        <h3 class="white" style="color: whitesmoke; margin-left: 20px;">anbaalo - Visualización de datos</h3>
+        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal" id="wheel" style="color:whitesmoke; margin-right: 20px;">
+            <i class="bi bi-gear-fill"></i>
+            Filtros
+          </button>
+
+    </div>
+
+    <div class="main container">
+
+        <!-- IPV -->
+        <h1>¿Cuál es el mejor sitio de españa para vivir?</h1>
+        <div class="alert alert-info" role="alert">
+            <p>
+                Para responder a esta pregunta primero necesitaremos responder a varias preguntas:
+            </p>
+            <ul>
+                <li>¿Cuál es el sitio más caro para vivir?</li>
+                <li>¿Dónde se tienen las mejores condiciones de vida?</li>
+            </ul>
+        </div>
+
+        <div class="alert alert-secondary" role="alert">
+            <h2>¿Donde resulta más rentable vivir?</h2>
+            <p>
+                Búscaremos la respuesta en el IPV, este refleja la evolución de los precios de la vivienda, veremos la
+                información desglosada por comunidades autónomas.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3>IPV General</h3>
+            <div class="col-3"></div>
+            <div class="col-6">
+            <canvas id="comparativaIPVGeneral">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>IPV vivienda nueva</h3>
+                <canvas id="comparativaIPVNueva">
+            </div>
+            <div class="col-6">
+                <h3>IPV Vivienda segunda mano</h3>
+                <canvas id="comparativaIPVSegunda">
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            Como podemos ver en el histórico el IPV esta creciendo en todas las comunidades de la misma manera por lo
+            que, a la hora de comprar en sentido especulativo nos debería dar igual
+            la autonomía en la que comprar.
+        </div>
+
+        <div class="alert alert-secondary" role="alert">
+            <h2>Calidad de vida</h2>
+            <p>
+                En este apartado se mostrarán factores clave que no son de caracter económico. Estos pueden ser contaminación, la seguridad ciudadana (criminalidad, homicidios)
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+                <h3>Contaminación por regiones</h3>
+                <canvas id="comparativaContaminacion">
+            </div>
+            <div class="col-6 title-less">
+                <canvas id="comparativaContaminacion2019">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Criminalidad por regiones</h3>
+                <canvas id="historicoCriminalidad">
+            </div>
+            <div class="col-6 title-less">
+                <canvas id="historicoCriminalidadYear">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Homicidios por regiones</h3>
+                <canvas id="historicoHomicidios">
+            </div>
+            <div class="col-6 title-less">
+                <canvas id="historicoHomicidiosYear">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>Desigualdad por regiones</h3>
+                <canvas id="historicoDesigualdad">
+            </div>
+            <div class="col-6 title-less">
+                <canvas id="historicoDesigualdadYear">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Mapa desigualdad homicidios y criminalidad </h3>
+            <div class="col-3"></div>
+            
+            <div class="col-6">
+                
+            <canvas id="mapaDesigualdad"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>Salarios por regiones</h3>
+                <canvas id="comparativaSalarios">
+            </div>
+            <div class="col-6 title-less">
+                <canvas id="comparativaSalariosYear">
+            </div>
+        </div>
+        <div class="row">
+            <h3> Comparativa IPV por CCAA </h3>
+            
+            <div class="col-12">
+                
+            <div id="IPVMekko" style="min-height: 70vh;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
